@@ -8,7 +8,7 @@ export function Gallery() {
         <SectionHeading
           eyebrow="Recent Projects"
           title="Quality Electrical Work, Done Right"
-          description="A look at the types of projects Numar Electric handles for Arizona homes and businesses. Project photos coming soon."
+          description="A look at the types of projects Numar Electric handles for Arizona homes and businesses."
         />
 
         <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">

@@ -4,7 +4,6 @@ import { Footer } from "@/components/Footer";
 import { Gallery } from "@/components/Gallery";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
-import { ServiceAreas } from "@/components/ServiceAreas";
 import { Services } from "@/components/Services";
 import { TrustBar } from "@/components/TrustBar";
 import { WhyChoose } from "@/components/WhyChoose";
@@ -19,7 +18,6 @@ export default function Home() {
         <Services />
         <About />
         <WhyChoose />
-        <ServiceAreas />
         <Gallery />
         <Contact />
       </main>

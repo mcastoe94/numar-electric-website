@@ -1,47 +1,44 @@
+"use client";
+
 import Link from "next/link";
 import { PHONE_HREF, PHONE_NUMBER } from "@/lib/constants";
+import { ImageSlideshow } from "./ImageSlideshow";
+
+const heroHeight = "calc(100dvh - var(--site-header-height))";
 
 export function Hero() {
   return (
     <section
-      className="relative overflow-hidden bg-brand-dark text-white"
       aria-labelledby="hero-heading"
+      className="relative w-full overflow-hidden text-white"
+      style={{ height: heroHeight }}
     >
-      <div className="absolute inset-0 bg-[linear-gradient(145deg,#394439_0%,#111111_60%,#1a1f1a_100%)]" />
-      <div
-        className="absolute inset-0 opacity-[0.05]"
-        style={{
-          backgroundImage:
-            "linear-gradient(rgba(255,255,255,.8) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.8) 1px, transparent 1px)",
-          backgroundSize: "56px 56px",
-        }}
-        aria-hidden="true"
-      />
-      <div
-        className="absolute -right-32 top-20 h-96 w-96 rounded-full bg-accent/8 blur-3xl"
-        aria-hidden="true"
+      <ImageSlideshow
+        className="absolute inset-0 z-0 h-full w-full"
+        imageSizes="100vw"
+        variant="hero"
       />
 
-      <div className="relative mx-auto max-w-7xl px-4 py-24 sm:px-6 sm:py-32 lg:px-8 lg:py-40">
-        <div className="max-w-4xl">
-          <p className="mb-8 inline-flex items-center gap-2 text-xs font-medium uppercase tracking-[0.22em] text-accent">
+      <div className="relative z-10 mx-auto flex h-full max-w-7xl flex-col justify-center px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
+        <div className="max-w-3xl">
+          <p className="mb-6 inline-flex items-center gap-2 text-xs font-medium uppercase tracking-[0.22em] text-accent sm:mb-8">
             <BoltIcon />
             Arizona Electrical Contractor
           </p>
 
           <h1
             id="hero-heading"
-            className="font-heading text-[2.75rem] leading-[1.08] sm:text-6xl lg:text-7xl lg:leading-[1.05]"
+            className="font-heading text-[2.5rem] leading-[1.08] sm:text-6xl lg:text-7xl lg:leading-[1.05]"
           >
             Arizona Electrical Services You Can Trust
           </h1>
 
-          <p className="mt-8 max-w-2xl text-lg leading-8 text-white/75 sm:text-xl sm:leading-9">
+          <p className="mt-6 max-w-2xl text-lg leading-8 text-white/85 sm:mt-8 sm:text-xl sm:leading-9">
             Reliable residential and commercial electrical work backed by clean
             craftsmanship, honest communication, and professional service.
           </p>
 
-          <div className="mt-12 flex flex-col gap-4 sm:flex-row sm:items-center">
+          <div className="mt-10 flex flex-col gap-4 sm:mt-12 sm:flex-row sm:items-center">
             <Link
               href="#contact"
               className="inline-flex items-center justify-center rounded-sm bg-accent px-10 py-4 text-sm font-medium tracking-wide text-brand-dark transition-all hover:bg-[#d4b87a]"
@@ -50,14 +47,14 @@ export function Hero() {
             </Link>
             <a
               href={PHONE_HREF}
-              className="inline-flex items-center justify-center gap-2 rounded-sm border border-white/30 px-10 py-4 text-sm font-medium tracking-wide text-white transition-all hover:border-white/50 hover:bg-white/5"
+              className="inline-flex items-center justify-center gap-2 rounded-sm border border-white/35 bg-black/20 px-10 py-4 text-sm font-medium tracking-wide text-white backdrop-blur-sm transition-all hover:border-white/50 hover:bg-black/30"
             >
               <PhoneIcon />
               Call Numar Electric
             </a>
           </div>
 
-          <p className="mt-10 text-sm tracking-wide text-white/50">
+          <p className="mt-8 text-sm tracking-wide text-white/60 sm:mt-10">
             Serving Phoenix, Scottsdale, and surrounding Arizona communities ·{" "}
             <a href={PHONE_HREF} className="text-accent transition-colors hover:text-white">
               {PHONE_NUMBER}

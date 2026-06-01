@@ -6,7 +6,6 @@ export const EMAIL = "info@numarelectric.com";
 export const NAV_LINKS = [
   { label: "About", href: "#about" },
   { label: "Why Us", href: "#why-us" },
-  { label: "Service Areas", href: "#service-areas" },
   { label: "Projects", href: "#projects" },
   { label: "Contact", href: "#contact" },
 ] as const;
@@ -111,6 +110,35 @@ export const SERVICE_AREAS = [
   "Gilbert",
   "Glendale",
   "Peoria",
+] as const;
+
+/** Replace images in public/slideshow/ to update the homepage carousel. */
+export const HOME_SLIDESHOW = [
+  {
+    src: "/slideshow/slide-1-lighting.png",
+    alt: "Custom lighting installation with conduit and pendant bulbs",
+    label: "Lighting Installation",
+    objectPosition: "center",
+  },
+  {
+    src: "/slideshow/slide-2-commercial.png",
+    alt: "Commercial electrical conduit and panel rough-in",
+    label: "Commercial Electrical",
+    objectPosition: "center",
+  },
+  {
+    src: "/slideshow/slide-3-team.png",
+    alt: "Numar Electric team on site in hard hats and uniforms",
+    label: "Our Team",
+    objectPosition: "top",
+  },
+  {
+    src: "/slideshow/slide-4-fleet.jpg?v=4",
+    alt: "Numar Electric branded service van at sunset",
+    label: "Our Fleet",
+    objectPosition: "center",
+    heroOverlay: "light",
+  },
 ] as const;
 
 export const PROJECTS = [

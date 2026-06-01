@@ -4,7 +4,6 @@ import {
   EMAIL,
   PHONE_HREF,
   PHONE_NUMBER,
-  SERVICE_AREAS,
   SERVICES,
 } from "@/lib/constants";
 
@@ -14,7 +13,7 @@ export function Footer() {
   return (
     <footer className="bg-brand-dark text-white">
       <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
-        <div className="grid gap-14 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-14 md:grid-cols-2 lg:grid-cols-3">
           <div className="lg:col-span-1">
             <Logo variant="green" elevated />
             <p className="mt-6 max-w-xs text-sm leading-7 text-white/60">
@@ -36,18 +35,6 @@ export function Footer() {
                   </Link>
                 </li>
               ))}
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="font-heading text-lg text-white">Service Areas</h3>
-            <ul className="mt-6 space-y-3">
-              {SERVICE_AREAS.map((area) => (
-                <li key={area} className="text-sm text-white/60">
-                  {area}, AZ
-                </li>
-              ))}
-              <li className="text-sm text-white/60">Surrounding Arizona areas</li>
             </ul>
           </div>
 

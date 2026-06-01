@@ -48,6 +48,11 @@ const ICONS: Record<(typeof SERVICES)[number]["icon"], ReactElement> = {
   ),
 };
 
+const SERVICE_ANCHORS: Partial<Record<(typeof SERVICES)[number]["title"], string>> = {
+  "Residential Electrical": "residential",
+  "Commercial Electrical": "commercial",
+};
+
 export function Services() {
   return (
     <section id="services" className="bg-surface-muted py-24 sm:py-32">
@@ -62,6 +67,7 @@ export function Services() {
           {SERVICES.map((service) => (
             <article
               key={service.title}
+              id={SERVICE_ANCHORS[service.title]}
               className="group flex flex-col border border-zinc-200/80 bg-white p-7 transition-all duration-300 hover:border-brand/20 hover:shadow-[0_8px_30px_rgba(57,68,57,0.08)]"
             >
               <div className="mb-6 inline-flex h-11 w-11 items-center justify-center text-brand transition-colors group-hover:text-accent">

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { PHONE_HREF, PHONE_NUMBER } from "@/lib/constants";
 import { SectionHeading } from "./SectionHeading";
@@ -47,17 +48,15 @@ export function About() {
           </div>
 
           <div className="relative">
-            <div className="aspect-[4/5] overflow-hidden bg-brand-dark shadow-2xl">
-              <div className="absolute inset-0 bg-[linear-gradient(160deg,#394439,#111111)]" />
-              <div
-                className="absolute inset-0 opacity-[0.06]"
-                style={{
-                  backgroundImage:
-                    "linear-gradient(rgba(255,255,255,.8) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.8) 1px, transparent 1px)",
-                  backgroundSize: "32px 32px",
-                }}
-                aria-hidden="true"
+            <div className="relative aspect-[4/5] overflow-hidden bg-brand-dark shadow-2xl">
+              <Image
+                src="/commercial-electrical-work.png"
+                alt="Commercial electrical conduit and panel rough-in installation"
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 50vw"
               />
+              <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/90 via-brand-dark/25 to-transparent" />
               <div className="relative flex h-full flex-col justify-end p-10 sm:p-12">
                 <p className="text-xs font-medium uppercase tracking-[0.22em] text-accent">
                   Arizona Owned
