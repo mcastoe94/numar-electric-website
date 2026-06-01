@@ -55,6 +55,13 @@ export function ImageSlideshow({
     return () => window.clearInterval(id);
   }, [paused, reducedMotion, next]);
 
+  useEffect(() => {
+    HOME_SLIDESHOW.forEach((slide) => {
+      const img = new window.Image();
+      img.src = slide.src;
+    });
+  }, []);
+
   return (
     <div
       className={`relative h-full min-h-full overflow-hidden bg-brand-dark ${className}`}
@@ -129,6 +136,15 @@ export function ImageSlideshow({
         <div className="pointer-events-none absolute inset-0 z-10 flex flex-col justify-end">
           {overlay}
         </div>
+      ) : null}
+
+      {isHero ? (
+        <p
+          className="absolute bottom-14 left-1/2 z-20 -translate-x-1/2 rounded-full bg-black/35 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.18em] text-white/90 backdrop-blur-sm sm:bottom-16"
+          aria-hidden="true"
+        >
+          {activeSlide.label}
+        </p>
       ) : null}
 
       {showLabels && !isHero ? (
