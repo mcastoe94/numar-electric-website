@@ -1,6 +1,6 @@
 export const COMPANY_NAME = "Numar Electric";
-export const PHONE_NUMBER = "(480) 555-0147";
-export const PHONE_HREF = "tel:+14805550147";
+export const PHONE_NUMBER = "(480) 201-8656";
+export const PHONE_HREF = "tel:+14802018656";
 export const EMAIL = "info@numarelectric.com";
 
 export const NAV_LINKS = [
@@ -12,16 +12,16 @@ export const NAV_LINKS = [
 
 export const SERVICES = [
   {
-    title: "Residential Electrical",
-    description:
-      "Full-service electrical work for Arizona homes, from outlets and circuits to whole-home upgrades.",
-    icon: "home",
-  },
-  {
     title: "Commercial Electrical",
     description:
       "Reliable electrical solutions for offices, retail spaces, warehouses, and commercial properties.",
     icon: "building",
+  },
+  {
+    title: "Residential Electrical",
+    description:
+      "Full-service electrical work for Arizona homes, from outlets and circuits to whole-home upgrades.",
+    icon: "home",
   },
   {
     title: "Panel Upgrades",
@@ -165,8 +165,8 @@ export const PROJECTS = [
 ] as const;
 
 export const SERVICE_FORM_OPTIONS = [
-  "Residential Electrical",
   "Commercial Electrical",
+  "Residential Electrical",
   "Panel Upgrade",
   "EV Charger Installation",
   "Troubleshooting & Repairs",

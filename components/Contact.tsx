@@ -80,7 +80,7 @@ export function Contact() {
                     name="phone"
                     type="tel"
                     required
-                    placeholder="(480) 555-0147"
+                    placeholder="(480) 201-8656"
                   />
                 </div>
                 <Field

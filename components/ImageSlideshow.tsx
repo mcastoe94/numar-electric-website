@@ -106,6 +106,8 @@ export function ImageSlideshow({
         </div>
       ))}
 
+      <div className="absolute inset-0 bg-zinc-700/40" aria-hidden="true" />
+
       {isHero ? (
         <>
           <div
