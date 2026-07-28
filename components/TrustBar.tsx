@@ -7,10 +7,10 @@ export function TrustBar() {
         {TRUST_ITEMS.map((item) => (
           <li
             key={item}
-            className="flex min-h-[5.5rem] items-center justify-center gap-3 border-b border-r border-zinc-200 px-6 py-7 text-center"
+            className="flex min-h-[5.25rem] items-center justify-center gap-2.5 border-b border-r border-zinc-200 px-5 py-6 text-center sm:min-h-[5.75rem] sm:px-6"
           >
             <CheckIcon />
-            <span className="text-sm font-medium tracking-wide text-brand-dark sm:text-[0.9375rem]">
+            <span className="text-sm font-medium tracking-[0.02em] text-brand-dark sm:text-[0.9375rem]">
               {item}
             </span>
           </li>
@@ -22,12 +22,12 @@ export function TrustBar() {
 
 function CheckIcon() {
   return (
-    <span className="inline-flex h-7 w-7 shrink-0 items-center justify-center text-accent">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+    <span className="inline-flex h-5 w-5 shrink-0 items-center justify-center text-accent" aria-hidden="true">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
         <path
           d="M5 12l4 4L19 7"
           stroke="currentColor"
-          strokeWidth="2"
+          strokeWidth="2.25"
           strokeLinecap="round"
           strokeLinejoin="round"
         />

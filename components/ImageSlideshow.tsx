@@ -10,7 +10,6 @@ type ImageSlideshowProps = {
   className?: string;
   overlay?: ReactNode;
   imageSizes?: string;
-  showLabels?: boolean;
   variant?: "default" | "hero";
 };
 
@@ -18,7 +17,6 @@ export function ImageSlideshow({
   className = "",
   overlay,
   imageSizes = "(max-width: 1024px) 100vw, 50vw",
-  showLabels = true,
   variant = "default",
 }: ImageSlideshowProps) {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -86,7 +84,7 @@ export function ImageSlideshow({
             <img
               src={slide.src}
               alt={slide.alt}
-              className="h-full w-full object-cover"
+              className="h-full w-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] will-change-transform group-hover:scale-[1.02]"
               style={{ objectPosition: slide.objectPosition ?? "center" }}
               fetchPriority={index === 0 ? "high" : "low"}
             />
@@ -96,7 +94,7 @@ export function ImageSlideshow({
                 src={slide.src}
                 alt={slide.alt}
                 fill
-                className="object-cover"
+                className="object-cover transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] will-change-transform group-hover:scale-[1.02]"
                 style={{ objectPosition: slide.objectPosition ?? "center" }}
                 sizes={imageSizes}
                 priority={index === 0}
@@ -137,36 +135,6 @@ export function ImageSlideshow({
       {overlay ? (
         <div className="pointer-events-none absolute inset-0 z-10 flex flex-col justify-end">
           {overlay}
-        </div>
-      ) : null}
-
-      {isHero ? (
-        <p
-          className="absolute bottom-14 left-1/2 z-20 -translate-x-1/2 rounded-full bg-black/35 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.18em] text-white/90 backdrop-blur-sm sm:bottom-16"
-          aria-hidden="true"
-        >
-          {activeSlide.label}
-        </p>
-      ) : null}
-
-      {showLabels && !isHero ? (
-        <div className="absolute left-0 right-0 top-4 z-20 flex flex-wrap justify-center gap-2 px-4 sm:top-6">
-          {HOME_SLIDESHOW.map((slide, index) => (
-            <button
-              key={slide.src}
-              type="button"
-              onClick={() => goTo(index)}
-              className={`rounded-full px-3 py-1 text-xs font-medium tracking-wide transition-colors ${
-                index === activeIndex
-                  ? "bg-accent text-brand-dark"
-                  : "bg-white/20 text-white hover:bg-white/35"
-              }`}
-              aria-label={`Show slide ${index + 1}: ${slide.label}`}
-              aria-current={index === activeIndex ? "true" : undefined}
-            >
-              {slide.label}
-            </button>
-          ))}
         </div>
       ) : null}
 

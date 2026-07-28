@@ -1,6 +1,6 @@
 import type { ReactElement } from "react";
 import Link from "next/link";
-import { SERVICES } from "@/lib/constants";
+import { SERVICE_PAGE_HREFS, SERVICES } from "@/lib/constants";
 import { SectionHeading } from "./SectionHeading";
 
 const ICONS: Record<(typeof SERVICES)[number]["icon"], ReactElement> = {
@@ -55,36 +55,39 @@ const SERVICE_ANCHORS: Partial<Record<(typeof SERVICES)[number]["title"], string
 
 export function Services() {
   return (
-    <section id="services" className="bg-surface-muted py-24 sm:py-32">
+    <section id="services" className="bg-surface-muted py-28 sm:py-36">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
           eyebrow="Our Services"
-          title="Electrical Solutions for Arizona Homes & Businesses"
+          title="Electrical Solutions for Homes & Businesses"
           description="From everyday repairs to full-scale commercial projects, Numar Electric delivers dependable electrical work with a focus on safety, clarity, and clean results."
         />
 
-        <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:mt-[4.5rem] lg:grid-cols-4">
           {SERVICES.map((service) => (
-            <article
+            <Link
               key={service.title}
+              href={SERVICE_PAGE_HREFS[service.title]}
               id={SERVICE_ANCHORS[service.title]}
-              className="group flex flex-col border border-zinc-200/80 bg-white p-7 transition-all duration-300 hover:border-brand/20 hover:shadow-[0_8px_30px_rgba(57,68,57,0.08)]"
+              className="group flex flex-col border border-zinc-200/80 bg-white p-7 transition-[border-color,box-shadow,transform] duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-0.5 hover:border-brand/20 hover:shadow-[0_8px_30px_rgba(57,68,57,0.08)]"
             >
-              <div className="mb-6 inline-flex h-11 w-11 items-center justify-center text-brand transition-colors group-hover:text-accent">
+              <div className="mb-6 inline-flex h-11 w-11 items-center justify-center text-brand transition-colors duration-300 group-hover:text-accent">
                 {ICONS[service.icon]}
               </div>
-              <h3 className="font-heading text-xl text-brand-dark">{service.title}</h3>
-              <p className="mt-4 flex-1 text-sm leading-7 text-zinc-600">
+              <h3 className="font-heading text-[1.25rem] leading-snug text-brand-dark transition-colors group-hover:text-brand">
+                {service.title}
+              </h3>
+              <p className="mt-4 flex-1 text-sm leading-[1.75] text-zinc-600 text-pretty">
                 {service.description}
               </p>
-            </article>
+            </Link>
           ))}
         </div>
 
-        <div className="mt-16 text-center">
+        <div className="mt-16 text-center lg:mt-[4.5rem]">
           <Link
             href="#contact"
-            className="inline-flex items-center justify-center rounded-sm bg-brand px-10 py-4 text-sm font-medium tracking-wide text-white transition-all hover:bg-brand-dark"
+            className="inline-flex min-h-12 items-center justify-center rounded-sm bg-brand px-10 py-4 text-sm font-medium leading-none tracking-[0.02em] text-white transition-colors duration-300 hover:bg-brand-dark"
           >
             Get a Service Quote
           </Link>

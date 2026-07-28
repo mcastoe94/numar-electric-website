@@ -49,13 +49,13 @@ export function Contact() {
   }
 
   return (
-    <section id="contact" className="bg-surface-muted py-24 sm:py-32">
+    <section id="contact" className="bg-surface-muted py-28 sm:py-36">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid gap-16 lg:grid-cols-2 lg:gap-20">
           <div>
             <SectionHeading
               eyebrow="Contact"
-              title="Ready to Schedule Your Electrical Service?"
+              title="Ready to Schedule Service?"
               description="Tell us about your project and a member of the Numar Electric team will follow up with next steps."
               align="left"
             />
@@ -73,12 +73,12 @@ export function Contact() {
               <p className="text-xs font-medium uppercase tracking-[0.2em] text-accent">
                 Prefer to talk now?
               </p>
-              <p className="mt-3 text-base leading-7 text-zinc-600">
+              <p className="mt-3 text-[0.9875rem] leading-[1.75] text-zinc-600 text-pretty">
                 Call Numar Electric to discuss your project, timeline, and service needs.
               </p>
               <a
                 href={PHONE_HREF}
-                className="mt-5 inline-flex items-center justify-center rounded-sm bg-brand px-7 py-3.5 text-sm font-medium tracking-wide text-white transition-all hover:bg-brand-dark"
+                className="mt-5 inline-flex min-h-12 items-center justify-center rounded-sm bg-brand px-7 py-3.5 text-sm font-medium leading-none tracking-[0.02em] text-white transition-colors duration-300 hover:bg-brand-dark"
               >
                 Call {PHONE_NUMBER}
               </a>
@@ -102,7 +102,7 @@ export function Contact() {
                 <h3 className="font-heading mt-8 text-3xl text-brand-dark">
                   Quote Request Received
                 </h3>
-                <p className="mt-4 max-w-sm text-sm leading-7 text-zinc-600">
+                <p className="mt-4 max-w-sm text-sm leading-[1.7] text-zinc-600">
                   Thank you for contacting Numar Electric. We&apos;ll review your project
                   details and get back to you shortly.
                 </p>
@@ -174,7 +174,7 @@ export function Contact() {
                 <button
                   type="submit"
                   disabled={submitting}
-                  className="w-full rounded-sm bg-brand px-8 py-4 text-sm font-medium tracking-wide text-white transition-all hover:bg-brand-dark disabled:cursor-not-allowed disabled:opacity-70"
+                  className="inline-flex min-h-12 w-full items-center justify-center rounded-sm bg-brand px-8 py-4 text-sm font-medium leading-none tracking-[0.02em] text-white transition-colors duration-300 hover:bg-brand-dark disabled:cursor-not-allowed disabled:opacity-70"
                 >
                   {submitting ? "Sending..." : "Submit Quote Request"}
                 </button>
@@ -232,12 +232,12 @@ function ContactItem({
       {href ? (
         <a
           href={href}
-          className="font-heading mt-1 inline-block text-xl text-brand-dark transition-colors hover:text-brand"
+          className="font-heading mt-1 inline-block text-xl leading-snug text-brand-dark transition-colors hover:text-brand"
         >
           {value}
         </a>
       ) : (
-        <p className="font-heading mt-1 text-xl text-brand-dark">{value}</p>
+        <p className="font-heading mt-1 text-xl leading-snug text-brand-dark">{value}</p>
       )}
     </div>
   );

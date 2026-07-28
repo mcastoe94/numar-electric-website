@@ -1,13 +1,28 @@
 export const COMPANY_NAME = "Numar Electric";
+export const LEGAL_NAME = "Numar Electric Corporation";
 export const PHONE_NUMBER = "(480) 201-8656";
 export const PHONE_HREF = "tel:+14802018656";
 export const EMAIL = "info@numarelectric.com";
+export const ROC_NUMBER = "366059";
+export const LICENSE_CLASS = "CR-11";
+export const BUSINESS_HOURS = "Monday–Friday, 7:00 AM–5:00 PM";
+export const WORKMANSHIP_WARRANTY = "1 year";
+export const SITE_URL = "https://www.numarelectric.com";
+export const BUSINESS_CITY = "Scottsdale";
+export const BUSINESS_REGION = "AZ";
+export const BUSINESS_COUNTRY = "US";
+export const BUSINESS_STREET = "8350 E Raintree Dr Ste 245";
+export const BUSINESS_POSTAL_CODE = "85260";
+export const BUSINESS_ADDRESS = `${BUSINESS_STREET}, ${BUSINESS_CITY}, ${BUSINESS_REGION} ${BUSINESS_POSTAL_CODE}`;
+export const BUSINESS_MAP_EMBED_SRC =
+  "https://maps.google.com/maps?q=8350+E+Raintree+Dr+Ste+245+Scottsdale+AZ+85260&z=15&output=embed";
+export const BUSINESS_MAP_LINK =
+  "https://www.google.com/maps/search/?api=1&query=8350+E+Raintree+Dr+Ste+245+Scottsdale+AZ+85260";
 
 export const NAV_LINKS = [
-  { label: "About", href: "#about" },
-  { label: "Why Us", href: "#why-us" },
-  { label: "Projects", href: "#projects" },
-  { label: "Contact", href: "#contact" },
+  { label: "Contact", href: "/#contact" },
+  { label: "Why Us", href: "/#why-us" },
+  { label: "About", href: "/" },
 ] as const;
 
 export const SERVICES = [
@@ -61,11 +76,23 @@ export const SERVICES = [
   },
 ] as const;
 
+/** Paths for the eight SEO service pages (dropdown links only). */
+export const SERVICE_PAGE_HREFS: Record<(typeof SERVICES)[number]["title"], string> = {
+  "Commercial Electrical": "/commercial-electrical",
+  "Residential Electrical": "/residential-electrical",
+  "Panel Upgrades": "/electrical-service-panel-upgrades",
+  "EV Charger Installation": "/ev-charger-installation",
+  "Troubleshooting & Repairs": "/electrical-troubleshooting-repairs-service-calls",
+  "Lighting Installation": "/lighting-installation",
+  "Remodel Electrical": "/remodel-electrical",
+  "New Construction Wiring": "/new-construction-wiring",
+};
+
 export const TRUST_ITEMS = [
+  "Arizona ROC #366059",
   "Licensed & Insured",
   "Residential & Commercial",
-  "Arizona Owned",
-  "Clean, Professional Work",
+  "Serving the Phoenix Metro",
 ] as const;
 
 export const WHY_CHOOSE = [
@@ -108,8 +135,23 @@ export const SERVICE_AREAS = [
   "Mesa",
   "Chandler",
   "Gilbert",
+  "Paradise Valley",
   "Glendale",
-  "Peoria",
+  "Cave Creek",
+  "Fountain Hills",
+] as const;
+
+export const CITY_PAGE_LINKS = [
+  { label: "Scottsdale", href: "/electrician-scottsdale-az" },
+  { label: "Phoenix", href: "/electrician-phoenix-az" },
+  { label: "Tempe", href: "/electrician-tempe-az" },
+  { label: "Mesa", href: "/electrician-mesa-az" },
+  { label: "Chandler", href: "/electrician-chandler-az" },
+  { label: "Gilbert", href: "/electrician-gilbert-az" },
+  { label: "Paradise Valley", href: "/electrician-paradise-valley-az" },
+  { label: "Glendale", href: "/electrician-glendale-az" },
+  { label: "Cave Creek", href: "/electrician-cave-creek-az" },
+  { label: "Fountain Hills", href: "/electrician-fountain-hills-az" },
 ] as const;
 
 /** Replace images in public/slideshow/ to update the homepage carousel. */
@@ -122,9 +164,9 @@ export const HOME_SLIDESHOW = [
     heroOverlay: "light",
   },
   {
-    src: "/slideshow/slide-1-lighting.png",
-    alt: "Custom lighting installation with conduit and pendant bulbs",
-    label: "Lighting Installation",
+    src: "/slideshow/slide-5-controls.jpg",
+    alt: "Electrical control panel internals with terminal blocks and circuit board",
+    label: "Controls & Gear",
     objectPosition: "center",
   },
   {
@@ -138,29 +180,6 @@ export const HOME_SLIDESHOW = [
     alt: "Numar Electric team on site in hard hats and uniforms",
     label: "Our Team",
     objectPosition: "top",
-  },
-] as const;
-
-export const PROJECTS = [
-  {
-    title: "Panel Upgrade",
-    category: "Residential",
-    description: "200-amp service upgrade with clean panel install and labeling.",
-  },
-  {
-    title: "Commercial Wiring",
-    category: "Commercial",
-    description: "Tenant improvement electrical for a growing Arizona business.",
-  },
-  {
-    title: "Lighting Installation",
-    category: "Residential",
-    description: "Recessed and accent lighting throughout a Scottsdale home.",
-  },
-  {
-    title: "EV Charger Install",
-    category: "Residential",
-    description: "Dedicated circuit and wall charger install with clean conduit routing.",
   },
 ] as const;
 

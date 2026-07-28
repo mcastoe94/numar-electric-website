@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 type LogoProps = {
   variant?: "green" | "light";
@@ -15,6 +18,7 @@ export function Logo({
   showWordmark = true,
   elevated = false,
 }: LogoProps) {
+  const pathname = usePathname();
   const src =
     variant === "light"
       ? "/numar-electric-logo-light.png"
@@ -23,8 +27,20 @@ export function Logo({
   return (
     <Link
       href="/"
-      className={`inline-flex items-center gap-3.5 transition-opacity hover:opacity-90 ${className}`}
+      className={`inline-flex items-center gap-4 transition-opacity duration-300 hover:opacity-90 ${className}`}
       aria-label="Numar Electric home"
+      onClick={() => {
+        if (pathname === "/") {
+          const html = document.documentElement;
+          const previous = html.style.scrollBehavior;
+          html.style.scrollBehavior = "auto";
+          window.scrollTo(0, 0);
+          html.style.scrollBehavior = previous;
+          if (window.location.hash) {
+            window.history.replaceState(null, "", "/");
+          }
+        }
+      }}
     >
       <span
         className={`inline-flex shrink-0 ${
@@ -34,15 +50,15 @@ export function Logo({
         <Image
           src={src}
           alt="Numar Electric logo"
-          width={64}
-          height={64}
-          className="h-14 w-14 object-contain sm:h-16 sm:w-16"
+          width={80}
+          height={80}
+          className="h-[4.375rem] w-[4.375rem] object-contain sm:h-20 sm:w-20"
           priority
         />
       </span>
       {showWordmark ? (
         <span
-          className={`font-heading hidden text-xl tracking-tight sm:inline lg:text-[1.35rem] ${
+          className={`font-heading hidden text-[1.375rem] leading-none tracking-[-0.02em] sm:inline lg:text-[1.55rem] ${
             variant === "light" || elevated ? "text-white" : "text-brand"
           }`}
         >

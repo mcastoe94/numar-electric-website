@@ -2,13 +2,13 @@
 
 import { ImageSlideshow } from "./ImageSlideshow";
 
-const showcaseHeight = "min(78dvh, 820px)";
+const showcaseHeight = "min(82dvh, 880px)";
 
 export function PhotoShowcase() {
   return (
     <section
       aria-label="Project photo gallery"
-      className="relative w-full overflow-hidden bg-brand-dark"
+      className="group relative w-full overflow-hidden bg-brand-dark"
       style={{ height: showcaseHeight }}
     >
       <ImageSlideshow
