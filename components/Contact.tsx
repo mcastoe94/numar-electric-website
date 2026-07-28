@@ -6,10 +6,46 @@ import { SectionHeading } from "./SectionHeading";
 
 export function Contact() {
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
-  function handleSubmit(event: FormEvent<HTMLFormElement>) {
+  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    setSubmitted(true);
+    setError(null);
+    setSubmitting(true);
+
+    const form = event.currentTarget;
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: formData.get("name"),
+          phone: formData.get("phone"),
+          email: formData.get("email"),
+          service: formData.get("service"),
+          details: formData.get("details"),
+        }),
+      });
+
+      const data = (await response.json().catch(() => null)) as {
+        error?: string;
+      } | null;
+
+      if (!response.ok) {
+        throw new Error(data?.error || "Unable to send your request. Please try again.");
+      }
+
+      setSubmitted(true);
+    } catch (err) {
+      setError(
+        err instanceof Error ? err.message : "Unable to send your request. Please try again.",
+      );
+    } finally {
+      setSubmitting(false);
+    }
   }
 
   return (
@@ -130,11 +166,17 @@ export function Contact() {
                     className="w-full resize-y rounded-sm border border-zinc-300 px-4 py-3.5 text-sm text-brand-dark outline-none transition-colors focus:border-brand focus:ring-1 focus:ring-brand/20"
                   />
                 </div>
+                {error ? (
+                  <p className="text-sm leading-6 text-red-700" role="alert">
+                    {error}
+                  </p>
+                ) : null}
                 <button
                   type="submit"
-                  className="w-full rounded-sm bg-brand px-8 py-4 text-sm font-medium tracking-wide text-white transition-all hover:bg-brand-dark"
+                  disabled={submitting}
+                  className="w-full rounded-sm bg-brand px-8 py-4 text-sm font-medium tracking-wide text-white transition-all hover:bg-brand-dark disabled:cursor-not-allowed disabled:opacity-70"
                 >
-                  Submit Quote Request
+                  {submitting ? "Sending..." : "Submit Quote Request"}
                 </button>
               </form>
             )}
