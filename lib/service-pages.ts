@@ -36,9 +36,9 @@ export const SERVICE_PAGES: ServicePage[] = [
       "We work with general contractors, property managers, and business owners across all of Arizona.",
     ],
     image: {
-      src: "/service-commercial-rooftop-v2.jpg",
-      alt: "Electrician installing rooftop electrical junction boxes and wiring",
-      objectPosition: "50% 42%",
+      src: "/service-commercial-warehouse.jpg",
+      alt: "Commercial warehouse with high-bay lighting and industrial electrical infrastructure",
+      objectPosition: "50% 35%",
       placement: "aside-left",
     },
     sections: [
@@ -167,7 +167,7 @@ export const SERVICE_PAGES: ServicePage[] = [
         href: "/new-construction-wiring",
       },
       {
-        label: "Electrical Service & Panel Upgrades",
+        label: "Service & Panel Upgrades",
         href: "/electrical-service-panel-upgrades",
       },
       {
@@ -306,11 +306,11 @@ export const SERVICE_PAGES: ServicePage[] = [
     ],
     related: [
       {
-        label: "Electrical Service & Panel Upgrades",
+        label: "Service & Panel Upgrades",
         href: "/electrical-service-panel-upgrades",
       },
       {
-        label: "Troubleshooting & Repairs",
+        label: "Troubleshooting, Repairs & Service Calls",
         href: "/electrical-troubleshooting-repairs-service-calls",
       },
       {
@@ -321,10 +321,10 @@ export const SERVICE_PAGES: ServicePage[] = [
   },
   {
     slug: "electrical-service-panel-upgrades",
-    navLabel: "Panel Upgrades",
-    title: "Electrical Service & Panel Upgrades | Scottsdale, Arizona",
+    navLabel: "Service & Panel Upgrades",
+    title: "Service & Panel Upgrades | Scottsdale, Arizona",
     description: "200 amp service and panel upgrades in Scottsdale, Phoenix, Tucson, Prescott, and all of Arizona. Permits and utility coordination included. [PHONE]",
-    h1: "Electrical Service and Panel Upgrades",
+    h1: "Service & Panel Upgrades",
     intro: [
       "Your electrical service brings power to the house. Your panel distributes it. An old or undersized service limits what your home can do. It can also create a fire risk.",
       "Numar Electric installs new panels and complete service upgrades. We hold ROC #366059.",
@@ -485,7 +485,7 @@ export const SERVICE_PAGES: ServicePage[] = [
         href: "/residential-electrical",
       },
       {
-        label: "Troubleshooting & Repairs",
+        label: "Troubleshooting, Repairs & Service Calls",
         href: "/electrical-troubleshooting-repairs-service-calls",
       },
     ],
@@ -637,7 +637,7 @@ export const SERVICE_PAGES: ServicePage[] = [
     ],
     related: [
       {
-        label: "Electrical Service & Panel Upgrades",
+        label: "Service & Panel Upgrades",
         href: "/electrical-service-panel-upgrades",
       },
       {
@@ -648,8 +648,8 @@ export const SERVICE_PAGES: ServicePage[] = [
   },
   {
     slug: "electrical-troubleshooting-repairs-service-calls",
-    navLabel: "Troubleshooting & Repairs",
-    title: "Electrical Repair & Service Calls | Phoenix Metro AZ",
+    navLabel: "Troubleshooting, Repairs & Service Calls",
+    title: "Troubleshooting, Repairs & Service Calls | Phoenix Metro AZ",
     description: "Electrical troubleshooting, repairs, and service calls across the Phoenix metro area. Dead outlets, tripping breakers, flickering lights. Call [PHONE].",
     h1: "Troubleshooting, Repairs & Service Calls",
     intro: [
@@ -803,7 +803,7 @@ export const SERVICE_PAGES: ServicePage[] = [
     ],
     related: [
       {
-        label: "Electrical Service & Panel Upgrades",
+        label: "Service & Panel Upgrades",
         href: "/electrical-service-panel-upgrades",
       },
       {
@@ -827,9 +827,9 @@ export const SERVICE_PAGES: ServicePage[] = [
       "We hold ROC #366059.",
     ],
     image: {
-      src: "/slideshow/slide-1-lighting.png",
-      alt: "Custom lighting installation with conduit and pendant bulbs",
-      objectPosition: "50% 22%",
+      src: "/service-lighting.jpg",
+      alt: "Electrician installing high-bay lighting from a scissor lift in a commercial building",
+      objectPosition: "50% 35%",
       placement: "aside-left",
     },
     sections: [
@@ -1133,7 +1133,7 @@ export const SERVICE_PAGES: ServicePage[] = [
         href: "/lighting-installation",
       },
       {
-        label: "Electrical Service & Panel Upgrades",
+        label: "Service & Panel Upgrades",
         href: "/electrical-service-panel-upgrades",
       },
       {
@@ -1331,7 +1331,7 @@ export const SERVICE_PAGES: ServicePage[] = [
         href: "/lighting-installation",
       },
       {
-        label: "Electrical Service & Panel Upgrades",
+        label: "Service & Panel Upgrades",
         href: "/electrical-service-panel-upgrades",
       },
     ],

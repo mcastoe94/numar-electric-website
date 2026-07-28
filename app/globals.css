@@ -25,6 +25,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--site-header-height) + 1.25rem);
 }
 
 #about,
@@ -32,7 +33,7 @@ html {
 #why-us,
 #services,
 #service-areas {
-  scroll-margin-top: var(--site-header-height);
+  scroll-margin-top: calc(var(--site-header-height) + 1.25rem);
 }
 
 body {

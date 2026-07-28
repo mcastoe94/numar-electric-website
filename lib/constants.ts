@@ -39,7 +39,7 @@ export const SERVICES = [
     icon: "home",
   },
   {
-    title: "Panel Upgrades",
+    title: "Service & Panel Upgrades",
     description:
       "Modern panel replacements and service upgrades to support today's power demands safely.",
     icon: "panel",
@@ -51,7 +51,7 @@ export const SERVICES = [
     icon: "ev",
   },
   {
-    title: "Troubleshooting & Repairs",
+    title: "Troubleshooting, Repairs & Service Calls",
     description:
       "Fast diagnosis and repair for flickering lights, tripped breakers, and electrical issues.",
     icon: "repair",
@@ -80,9 +80,9 @@ export const SERVICES = [
 export const SERVICE_PAGE_HREFS: Record<(typeof SERVICES)[number]["title"], string> = {
   "Commercial Electrical": "/commercial-electrical",
   "Residential Electrical": "/residential-electrical",
-  "Panel Upgrades": "/electrical-service-panel-upgrades",
+  "Service & Panel Upgrades": "/electrical-service-panel-upgrades",
   "EV Charger Installation": "/ev-charger-installation",
-  "Troubleshooting & Repairs": "/electrical-troubleshooting-repairs-service-calls",
+  "Troubleshooting, Repairs & Service Calls": "/electrical-troubleshooting-repairs-service-calls",
   "Lighting Installation": "/lighting-installation",
   "Remodel Electrical": "/remodel-electrical",
   "New Construction Wiring": "/new-construction-wiring",
@@ -186,9 +186,9 @@ export const HOME_SLIDESHOW = [
 export const SERVICE_FORM_OPTIONS = [
   "Commercial Electrical",
   "Residential Electrical",
-  "Panel Upgrade",
+  "Service & Panel Upgrades",
   "EV Charger Installation",
-  "Troubleshooting & Repairs",
+  "Troubleshooting, Repairs & Service Calls",
   "Lighting Installation",
   "Remodel Electrical",
   "New Construction Wiring",

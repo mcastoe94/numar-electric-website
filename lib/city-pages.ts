@@ -61,7 +61,7 @@ export const CITY_PAGES: CityPage[] = [
       },
       {
         type: "prose",
-        heading: "Panel Upgrades and Electrical Service Changes",
+        heading: "Service & Panel Upgrades",
         paragraphs: [
           "Custom homes and major remodeled properties in Scottsdale often outgrow an older panel. Adding a spa, outdoor kitchen, or multiple high-draw appliances can push a 100-amp or early 200-amp setup past practical limits. Our [[electrical service and panel upgrades|/electrical-service-panel-upgrades]] work covers load evaluation, panel replacement, and service changes when the utility side of the job requires coordination.",
           "We keep the conversation practical: what your home needs now, what a remodel will add, and how to stage the work so inspection and utility steps stay organized. Clean labeling, neat gear, and a finished look that matches the rest of a high-end Scottsdale property are part of how we approach every service change.",
@@ -77,7 +77,7 @@ export const CITY_PAGES: CityPage[] = [
       },
       {
         type: "prose",
-        heading: "Electrical Troubleshooting and Repairs",
+        heading: "Electrical Troubleshooting, Repairs & Service Calls",
         paragraphs: [
           "Flickering landscape lights, warm outlets near outdoor kitchens, or breakers that trip when the spa and AC run together are common calls in Scottsdale. Our [[troubleshooting and repair|/electrical-troubleshooting-repairs-service-calls]] work starts with diagnosis—finding the failed connection, overloaded circuit, or aging device—then correcting it cleanly.",
           "We explain what we find in plain language so you can decide on a repair now versus a broader upgrade if the system is showing its age. For remodel-prone neighborhoods, that honesty matters before you invest in finish work.",
@@ -142,7 +142,7 @@ export const CITY_PAGES: CityPage[] = [
     related: [
       { label: "Residential Electrical Services", href: "/residential-electrical" },
       { label: "Commercial & Tenant Improvement Electrical", href: "/commercial-electrical" },
-      { label: "Panel and Service Upgrades", href: "/electrical-service-panel-upgrades" },
+      { label: "Service & Panel Upgrades", href: "/electrical-service-panel-upgrades" },
       { label: "EV Charger Installation", href: "/ev-charger-installation" },
       { label: "Remodel Electrical", href: "/remodel-electrical" },
       { label: "Lighting Installation", href: "/lighting-installation" },
@@ -194,7 +194,7 @@ export const CITY_PAGES: CityPage[] = [
       },
       {
         type: "prose",
-        heading: "Panel Upgrades and Electrical Service Changes",
+        heading: "Service & Panel Upgrades",
         paragraphs: [
           "Many Phoenix homes still run on panels that were adequate decades ago but struggle with modern AC, kitchen loads, and home offices. [[Electrical service panel upgrades|/electrical-service-panel-upgrades]] give you room for remodel circuits and safer overcurrent protection. When a service change is required, we coordinate with the utility—APS or SRP, depending on your address—as part of normal project workflow.",
           "We do not treat a panel swap as a mystery quote. You get a clear explanation of what is changing, why it matters for your loads, and how permitting and inspection typically sequence in Phoenix.",
@@ -210,7 +210,7 @@ export const CITY_PAGES: CityPage[] = [
       },
       {
         type: "prose",
-        heading: "Electrical Troubleshooting and Repairs",
+        heading: "Electrical Troubleshooting, Repairs & Service Calls",
         paragraphs: [
           "Phoenix heat and age take a toll on connections, breakers, and outdoor equipment circuits. Our [[troubleshooting and repair service|/electrical-troubleshooting-repairs-service-calls]] focuses on finding the fault—loose neutrals, failing GFCI devices, overloaded multi-wire branches—rather than swapping parts blindly.",
           "For landlords and homeowners planning a sale or remodel, documenting what we find helps you prioritize safety fixes versus cosmetic electrical updates.",
@@ -273,10 +273,10 @@ export const CITY_PAGES: CityPage[] = [
       },
     ],
     related: [
-      { label: "Panel Upgrades for Phoenix Homes", href: "/electrical-service-panel-upgrades" },
+      { label: "Service & Panel Upgrades for Phoenix Homes", href: "/electrical-service-panel-upgrades" },
       { label: "Residential Electrical & Rewiring", href: "/residential-electrical" },
       { label: "Commercial Electrical & TI", href: "/commercial-electrical" },
-      { label: "Troubleshooting & Service Calls", href: "/electrical-troubleshooting-repairs-service-calls" },
+      { label: "Troubleshooting, Repairs & Service Calls", href: "/electrical-troubleshooting-repairs-service-calls" },
       { label: "Remodel Electrical Support", href: "/remodel-electrical" },
       { label: "New Construction Wiring", href: "/new-construction-wiring" },
     ],
@@ -327,7 +327,7 @@ export const CITY_PAGES: CityPage[] = [
       },
       {
         type: "prose",
-        heading: "Panel Upgrades and Electrical Service Changes",
+        heading: "Service & Panel Upgrades",
         paragraphs: [
           "Many Tempe homes and small commercial spaces still carry panels that were never designed for today’s plug loads—window units replaced by central AC, kitchen appliances stacked on shared circuits, and added laundry or workshop gear. [[Service and panel upgrades|/electrical-service-panel-upgrades]] create headroom and improve overcurrent protection.",
           "When a service change involves the utility, we treat permit and coordination steps as part of the job plan. You will know what depends on inspection timing versus what we can complete on our schedule.",
@@ -343,7 +343,7 @@ export const CITY_PAGES: CityPage[] = [
       },
       {
         type: "prose",
-        heading: "Electrical Troubleshooting and Repairs",
+        heading: "Electrical Troubleshooting, Repairs & Service Calls",
         paragraphs: [
           "Rental turnovers and older branch wiring mean Tempe properties see a lot of intermittent issues: dead outlets after tenant changes, GFCI devices that will not reset, and lighting circuits that fail under load. [[Electrical troubleshooting and repairs|/electrical-troubleshooting-repairs-service-calls]] is how we get those systems stable again.",
           "We document findings when that helps a property manager prioritize repairs across units, and we keep the work area tidy in occupied homes and businesses.",
@@ -408,9 +408,9 @@ export const CITY_PAGES: CityPage[] = [
     related: [
       { label: "Commercial Electrical Buildouts", href: "/commercial-electrical" },
       { label: "Residential Electrical Services", href: "/residential-electrical" },
-      { label: "Troubleshooting & Repairs", href: "/electrical-troubleshooting-repairs-service-calls" },
+      { label: "Troubleshooting, Repairs & Service Calls", href: "/electrical-troubleshooting-repairs-service-calls" },
       { label: "Remodel Electrical", href: "/remodel-electrical" },
-      { label: "Panel Upgrades", href: "/electrical-service-panel-upgrades" },
+      { label: "Service & Panel Upgrades", href: "/electrical-service-panel-upgrades" },
     ],
   },
   {
@@ -459,7 +459,7 @@ export const CITY_PAGES: CityPage[] = [
       },
       {
         type: "prose",
-        heading: "Panel Upgrades and Electrical Service Changes",
+        heading: "Service & Panel Upgrades",
         paragraphs: [
           "Adding a pool, converting a garage into a workshop, or stacking EV charging on an older Mesa panel is a common path to a service upgrade. We perform [[panel upgrades|/electrical-service-panel-upgrades]] with load calculations, neat gear installation, and coordination for utility and permit steps when required.",
           "Homeowners in Red Mountain Ranch and Alta Mesa often want the upgrade to look finished—not just functional. We treat labeling, cover fit, and workmanship as part of the deliverable.",
@@ -475,7 +475,7 @@ export const CITY_PAGES: CityPage[] = [
       },
       {
         type: "prose",
-        heading: "Electrical Troubleshooting and Repairs",
+        heading: "Electrical Troubleshooting, Repairs & Service Calls",
         paragraphs: [
           "Pool timers that fail after monsoon season, workshop tools that trip a shared circuit, and outdoor receptacles that lose power are typical Mesa service calls. Our [[troubleshooting and repair|/electrical-troubleshooting-repairs-service-calls]] process isolates the fault and corrects it without unnecessary replacement.",
           "When a repair reveals a broader capacity problem, we explain that clearly so you can plan a panel or circuit upgrade on your timeline.",
@@ -544,7 +544,7 @@ export const CITY_PAGES: CityPage[] = [
     ],
     related: [
       { label: "EV Charger Installation", href: "/ev-charger-installation" },
-      { label: "Panel & Service Upgrades", href: "/electrical-service-panel-upgrades" },
+      { label: "Service & Panel Upgrades", href: "/electrical-service-panel-upgrades" },
       { label: "Residential Electrical", href: "/residential-electrical" },
       { label: "Lighting Installation", href: "/lighting-installation" },
       { label: "New Construction Wiring", href: "/new-construction-wiring" },
@@ -597,7 +597,7 @@ export const CITY_PAGES: CityPage[] = [
       },
       {
         type: "prose",
-        heading: "Panel Upgrades and Electrical Service Changes",
+        heading: "Service & Panel Upgrades",
         paragraphs: [
           "Chandler homeowners often assume a newer panel means unlimited capacity. In practice, builder panels can fill up quickly once you add a charger, spa, or workshop circuit. [[Electrical service panel upgrades|/electrical-service-panel-upgrades]] restore practical headroom and modernize protection devices where needed.",
           "We walk through load needs in plain language and outline permit and utility coordination when a service change is part of the plan—standard contractor practice, not an afterthought.",
@@ -613,7 +613,7 @@ export const CITY_PAGES: CityPage[] = [
       },
       {
         type: "prose",
-        heading: "Electrical Troubleshooting and Repairs",
+        heading: "Electrical Troubleshooting, Repairs & Service Calls",
         paragraphs: [
           "Even newer Chandler homes develop issues: AFCI nuisance trips, failed dimmers on LED loads, and outdoor circuits that degrade under heat. [[Troubleshooting and repairs|/electrical-troubleshooting-repairs-service-calls]] start with diagnosis so repairs address the cause.",
           "Commercial sites often need after-hours or carefully timed access. Tell us how your space operates and we will schedule within workable windows when possible.",
@@ -679,7 +679,7 @@ export const CITY_PAGES: CityPage[] = [
       { label: "Commercial Electrical & TI", href: "/commercial-electrical" },
       { label: "EV Charger Installation", href: "/ev-charger-installation" },
       { label: "Lighting Installation", href: "/lighting-installation" },
-      { label: "Panel Upgrades", href: "/electrical-service-panel-upgrades" },
+      { label: "Service & Panel Upgrades", href: "/electrical-service-panel-upgrades" },
       { label: "Remodel Electrical", href: "/remodel-electrical" },
     ],
   },
@@ -729,7 +729,7 @@ export const CITY_PAGES: CityPage[] = [
       },
       {
         type: "prose",
-        heading: "Panel Upgrades and Electrical Service Changes",
+        heading: "Service & Panel Upgrades",
         paragraphs: [
           "Pooling outdoor entertainment loads onto a builder panel is a familiar Gilbert story. When breakers start tripping or there is no space left for a legitimate new circuit, [[electrical service panel upgrades|/electrical-service-panel-upgrades]] become the practical next step.",
           "We calculate loads, explain service-size options, and coordinate permits and utility steps when a service change is required. The goal is a panel that supports how you actually live outdoors and indoors—not just what the home shipped with.",
@@ -745,7 +745,7 @@ export const CITY_PAGES: CityPage[] = [
       },
       {
         type: "prose",
-        heading: "Electrical Troubleshooting and Repairs",
+        heading: "Electrical Troubleshooting, Repairs & Service Calls",
         paragraphs: [
           "Landscape lighting that flickers after rain, GFCI devices that will not hold on patio circuits, and shared garage circuits that trip under tool loads are frequent Gilbert calls. [[Electrical troubleshooting and repairs|/electrical-troubleshooting-repairs-service-calls]] isolate those problems and restore reliable operation.",
           "We prefer fixing the root cause over temporary resets. If the repair points to a larger capacity issue, we say so directly.",
@@ -813,7 +813,7 @@ export const CITY_PAGES: CityPage[] = [
       { label: "EV Charger Installation", href: "/ev-charger-installation" },
       { label: "New Construction Wiring", href: "/new-construction-wiring" },
       { label: "Residential Electrical", href: "/residential-electrical" },
-      { label: "Panel Upgrades", href: "/electrical-service-panel-upgrades" },
+      { label: "Service & Panel Upgrades", href: "/electrical-service-panel-upgrades" },
     ],
   },
   {
@@ -862,7 +862,7 @@ export const CITY_PAGES: CityPage[] = [
       },
       {
         type: "prose",
-        heading: "Panel Upgrades and Electrical Service Changes",
+        heading: "Service & Panel Upgrades",
         paragraphs: [
           "Custom remodels in Paradise Valley regularly add loads that older or mid-size services cannot support: spa equipment, expanded HVAC, outdoor kitchens, and extensive lighting. [[Electrical service panel upgrades|/electrical-service-panel-upgrades]] are planned with aesthetics and access in mind—not only ampacity.",
           "Utility coordination and permitting are handled as part of professional contractor practice. We keep the homeowner or project lead informed about sequencing so finish trades are not waiting on surprises.",
@@ -878,7 +878,7 @@ export const CITY_PAGES: CityPage[] = [
       },
       {
         type: "prose",
-        heading: "Electrical Troubleshooting and Repairs",
+        heading: "Electrical Troubleshooting, Repairs & Service Calls",
         paragraphs: [
           "Complex lighting systems and outdoor equipment create troubleshooting challenges that go beyond a simple breaker reset. [[Troubleshooting and repair|/electrical-troubleshooting-repairs-service-calls]] from Numar Electric focuses on methodical diagnosis—finding failing connections, control issues, or overloaded branches—then correcting them cleanly.",
           "On occupied custom homes, we work carefully around finishes and keep communication tight with the homeowner or site contact.",
@@ -948,7 +948,7 @@ export const CITY_PAGES: CityPage[] = [
     related: [
       { label: "Lighting Installation", href: "/lighting-installation" },
       { label: "Remodel Electrical", href: "/remodel-electrical" },
-      { label: "Panel & Service Upgrades", href: "/electrical-service-panel-upgrades" },
+      { label: "Service & Panel Upgrades", href: "/electrical-service-panel-upgrades" },
       { label: "New Construction Wiring", href: "/new-construction-wiring" },
       { label: "Residential Electrical", href: "/residential-electrical" },
     ],
@@ -999,7 +999,7 @@ export const CITY_PAGES: CityPage[] = [
       },
       {
         type: "prose",
-        heading: "Panel Upgrades and Electrical Service Changes",
+        heading: "Service & Panel Upgrades",
         paragraphs: [
           "Many Glendale properties still rely on panels that trip under ordinary evening loads. [[Electrical service panel upgrades|/electrical-service-panel-upgrades]] improve safety and create room for remodel circuits, garage shops, and outdoor equipment.",
           "When utility involvement is required, we coordinate those steps as part of the project plan and keep you informed about inspection timing so the rest of your remodel or addition can stay organized.",
@@ -1015,7 +1015,7 @@ export const CITY_PAGES: CityPage[] = [
       },
       {
         type: "prose",
-        heading: "Electrical Troubleshooting and Repairs",
+        heading: "Electrical Troubleshooting, Repairs & Service Calls",
         paragraphs: [
           "Historic-district homes and aging west-side stock produce classic repair calls: dead circuits, warm switches, and outdoor receptacles that fail after summer heat. Our [[troubleshooting and repair|/electrical-troubleshooting-repairs-service-calls]] work finds the fault and restores safe operation.",
           "Commercial lighting failures and breaker issues around busy corridors need fast, clear diagnosis. We focus on durable corrections, not temporary workarounds that fail the next week.",
@@ -1078,8 +1078,8 @@ export const CITY_PAGES: CityPage[] = [
       },
     ],
     related: [
-      { label: "Troubleshooting & Service Calls", href: "/electrical-troubleshooting-repairs-service-calls" },
-      { label: "Panel Upgrades", href: "/electrical-service-panel-upgrades" },
+      { label: "Troubleshooting, Repairs & Service Calls", href: "/electrical-troubleshooting-repairs-service-calls" },
+      { label: "Service & Panel Upgrades", href: "/electrical-service-panel-upgrades" },
       { label: "Commercial Electrical", href: "/commercial-electrical" },
       { label: "Residential Electrical", href: "/residential-electrical" },
       { label: "Remodel Electrical", href: "/remodel-electrical" },
@@ -1132,7 +1132,7 @@ export const CITY_PAGES: CityPage[] = [
       },
       {
         type: "prose",
-        heading: "Panel Upgrades and Electrical Service Changes",
+        heading: "Service & Panel Upgrades",
         paragraphs: [
           "Adding a workshop, barn circuits, or multiple outdoor living loads can overwhelm a service that was sized only for the main house. [[Electrical service panel upgrades|/electrical-service-panel-upgrades]] give Cave Creek properties the capacity to feed detached structures correctly.",
           "Long runs between structures require careful conductor and raceway planning. We treat permit and utility coordination as part of standard contractor practice when a service change is involved, and we explain sequencing before work begins.",
@@ -1148,7 +1148,7 @@ export const CITY_PAGES: CityPage[] = [
       },
       {
         type: "prose",
-        heading: "Electrical Troubleshooting and Repairs",
+        heading: "Electrical Troubleshooting, Repairs & Service Calls",
         paragraphs: [
           "Outbuilding circuits that fail under load, outdoor lighting that goes dark in sections, and nuisance trips that appear only when multiple structures are in use are typical Cave Creek calls. [[Troubleshooting and repairs|/electrical-troubleshooting-repairs-service-calls]] isolate whether the issue is a local fault, a shared feeder problem, or an overloaded panel.",
           "On larger lots, clear diagnosis saves time. We explain findings in plain language so you can prioritize repairs versus broader upgrades.",
@@ -1213,7 +1213,7 @@ export const CITY_PAGES: CityPage[] = [
     related: [
       { label: "New Construction Wiring", href: "/new-construction-wiring" },
       { label: "Residential Electrical", href: "/residential-electrical" },
-      { label: "Panel & Service Upgrades", href: "/electrical-service-panel-upgrades" },
+      { label: "Service & Panel Upgrades", href: "/electrical-service-panel-upgrades" },
       { label: "Lighting Installation", href: "/lighting-installation" },
       { label: "Remodel Electrical", href: "/remodel-electrical" },
     ],
@@ -1264,7 +1264,7 @@ export const CITY_PAGES: CityPage[] = [
       },
       {
         type: "prose",
-        heading: "Panel Upgrades and Electrical Service Changes",
+        heading: "Service & Panel Upgrades",
         paragraphs: [
           "Hillside and custom Fountain Hills properties frequently add loads over time—spas, expanded HVAC, and outdoor entertainment—until the original panel no longer keeps up. [[Electrical service panel upgrades|/electrical-service-panel-upgrades]] restore capacity and improve protection devices where needed.",
           "We outline permit and utility coordination when a service change is part of the work, and we keep the plan practical for sites where equipment access and routing take extra attention. We do not claim specialized structural or geotechnical engineering; we focus on sound electrical installation practices for the conditions on site.",
@@ -1280,7 +1280,7 @@ export const CITY_PAGES: CityPage[] = [
       },
       {
         type: "prose",
-        heading: "Electrical Troubleshooting and Repairs",
+        heading: "Electrical Troubleshooting, Repairs & Service Calls",
         paragraphs: [
           "Outdoor circuits and landscape lighting see hard use in Fountain Hills. Failed transformers, intermittent patio receptacles, and breakers that trip when spa equipment starts are common service issues. [[Troubleshooting and repairs|/electrical-troubleshooting-repairs-service-calls]] identify the fault and correct it cleanly.",
           "Indoor remodel-era problems—shared neutrals, overloaded kitchen circuits, aging devices—get the same methodical approach.",
@@ -1344,7 +1344,7 @@ export const CITY_PAGES: CityPage[] = [
     ],
     related: [
       { label: "Lighting Installation", href: "/lighting-installation" },
-      { label: "Panel & Service Upgrades", href: "/electrical-service-panel-upgrades" },
+      { label: "Service & Panel Upgrades", href: "/electrical-service-panel-upgrades" },
       { label: "EV Charger Installation", href: "/ev-charger-installation" },
       { label: "Remodel Electrical", href: "/remodel-electrical" },
       { label: "Residential Electrical", href: "/residential-electrical" },
