@@ -5,7 +5,7 @@ import { SectionHeading } from "./SectionHeading";
 
 export function About() {
   return (
-    <section id="about" className="bg-white py-24 sm:py-32">
+    <section id="about" className="bg-white pb-28 pt-24 sm:pb-36 sm:pt-32">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid items-center gap-16 lg:grid-cols-2 lg:gap-20">
           <div>
@@ -47,7 +47,7 @@ export function About() {
             </div>
           </div>
 
-          <div className="relative">
+          <div className="relative mb-6 sm:mb-8">
             <div className="relative aspect-[4/5] overflow-hidden bg-brand-dark shadow-2xl">
               <Image
                 src="/commercial-electrical-work.png"
@@ -55,6 +55,7 @@ export function About() {
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
+                priority
               />
               <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/90 via-brand-dark/25 to-transparent" />
               <div className="relative flex h-full flex-col justify-end p-10 sm:p-12">
